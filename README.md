@@ -76,6 +76,17 @@
 - 다양한 Fully-connected layer 수와 Node 수를 바꿔가며 분류 성능이 좋은 classifier search
 - 1층의 Fully-connected layer와 1024개의 Node로 설정
 
+
+|Hyperparameter|value|
+|-------|-----|
+|Fully-connected layer|1층|
+|Node|1024개|
+|Drop-out|0.5|
+|Batch size|16|
+|learing rate|0.0001|
+|Optimizer|Adam|
+
+
 ### 2.7. 모델 Training
 - batch size, learning rate, optimizer, drop out 등 모델의 accuracy 성능을 높이는 hyper parameter를 찾아가며 training 진행
 
