@@ -77,6 +77,11 @@
 - 1층의 Fully-connected layer와 1024개의 Node로 설정
 
 
+
+
+### 2.7. 모델 Training
+- batch size, learning rate, optimizer, drop out 등 모델의 accuracy 성능을 높이는 hyper parameter를 찾아가며 training 진행
+
 |Hyperparameter|value|
 |-------|-----|
 |Fully-connected layer|1층|
@@ -86,9 +91,6 @@
 |learing rate|0.0001|
 |Optimizer|Adam|
 
-
-### 2.7. 모델 Training
-- batch size, learning rate, optimizer, drop out 등 모델의 accuracy 성능을 높이는 hyper parameter를 찾아가며 training 진행
 
 ## 3. 수행결과
 ### 3.1.과제수행 결과
