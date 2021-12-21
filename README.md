@@ -9,6 +9,7 @@
 
 ## 1.2. 과제 주요내용
 - EEG 1D signal data를 Continuous wavelet transform(CWT)를 통해 2D scalogram으로 변환 후, 이미지화하여 Time과 Frequency 모두에 걸쳐 표현된 data 획득
-- Convolutional Neural Network(CNN)을 통해 감정 분류에 적절한 feature 자동 추출 - Parallel 2D CNN을 통한 feature extraction (all-channel) 
- - 일반적인 2D CNN을 통한 feature extraction (single-channel)
- - 
+- Convolutional Neural Network(CNN)을 통해 감정 분류에 적절한 feature 자동 추출 
+    - Parallel 2D CNN을 통한 feature extraction (all-channel) 
+    - 일반적인 2D CNN을 통한 feature extraction (single-channel)
+    - 
