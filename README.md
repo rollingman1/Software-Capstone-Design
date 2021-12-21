@@ -48,6 +48,7 @@
 - log를 취해 scaling 해줌으로써 큰 wavelet coefficient값에 치우쳐져 색깔이 mapping 되지 않도록 함
 - jet colormap으로 이미지화 
 
+<img src = "https://user-images.githubusercontent.com/80897270/146943188-6e2af096-35f8-4155-bf32-d3ad7675c2ec.PNG"/>
 
 
 
