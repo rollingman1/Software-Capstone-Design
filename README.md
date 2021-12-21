@@ -40,6 +40,8 @@
     - 1~9사이 값이 할당된 Valence 값을 5를 기준으로 High Valence / Low Valence로 relabeling
 
 ### 2.3. Continuous Wavelet Transform(CWT) 수행
+
+
 - Morlet Wavelt fucntion을 사용한 Coninuous Wavelt Transform을 통해 기존의 1D EEG signal data를 Time-Frequency의 정보를 모두 갖도록 wavelet coefficient 값을 갖는 2차원 형태의 scalogram으로 변환
 
 ### 2.4. Scalogram 이미지화
@@ -49,14 +51,6 @@
 - jet colormap으로 이미지화 
 
 <img src = "https://user-images.githubusercontent.com/80897270/146943188-6e2af096-35f8-4155-bf32-d3ad7675c2ec.PNG"/>
-
-
-
-
-
-
-
-
 
 
 ### 2.5. Convolutional Neural Network(CNN)을 통한 feature extraction
