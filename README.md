@@ -7,6 +7,9 @@
 - 감정은 논리적인 의사결정, 인지, 지능과 관련돼 있어 일상생활과 건강에 밀접한 관련이 있다. EEG신호를 통해 정확한 감정분석이 가능해지면 불안, 분노와 같이 인간의 면역체계를 방해하고 질병의 위험을 증가시키는 감정들을 탐지해내고 개선해냄으로써 삶의 전반적인 질을 향상시키는데 기여할 수 있다.
 - 표정, 음성, 동작 등을 통한 감정 분석과 달리 뇌파는 본인의 의지로 억누르거나 숨길 수 없기 때문에 뇌파를 이용한 감정 분석은 보다 객관적인 분석 결과를 얻을 수 있다.
 
+<p align="center"><img src = "https://user-images.githubusercontent.com/80897270/146954040-0fae886a-ea18-4413-b53d-72513ff2710e.png" width ="500" height = "300"/></p>
+
+
 ### 1.2. 과제 주요내용
 - EEG 1D signal data를 Continuous wavelet transform(CWT)를 통해 2D scalogram으로 변환 후, 이미지화하여 Time과 Frequency 모두에 걸쳐 표현된 data 획득
 - Convolutional Neural Network(CNN)을 통해 감정 분류에 적절한 feature 자동 추출 
