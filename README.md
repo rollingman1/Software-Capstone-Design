@@ -23,6 +23,8 @@
 
 ## 2. 과제 수행방법
 ### 2.1. AMIGOS dataset으로 부터 EEG signal data 수집
+
+
 - AMIGOS dataset : http://www.eecs.qmul.ac.uk/mmv/datasets/amigos/readme.html
 - AMIGOS dataset에서 16개의 short video를 시청하며 측정된 EEG signal data 수집
 - 한 사람당 하나의 video를 시청하며 14개의 채널에 대하여 EEG signal 측정됨
@@ -88,7 +90,6 @@
 - Fully-connected layer와 CNN으로부터 전달받은 feature를 연결하여 classification 수행
 - 다양한 Fully-connected layer 수와 Node 수를 바꿔가며 분류 성능이 좋은 classifier search
 - 1층의 Fully-connected layer와 1024개의 Node로 설정
-
 
 
 
