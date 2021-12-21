@@ -65,13 +65,15 @@
     - 한 사람당 하나의 video를 보며 기록된 14개 EEG channel에 대한 14개의 EEG image를 평행하게 동시에 input으로 사용
     - input data수는 40(참가자 수) x 16(비디오 수) - 26(결측 치) = 614개
 
-
+<img src = "https://user-images.githubusercontent.com/80897270/146942840-39ddf32a-1255-4beb-ad77-3025a306da0d.png" width ="500" height = "300"/>
 
 - 일반적인 2D CNN (single-channel)
     - ImageNet으로 pre-trained 하나의 inceptionV3 사용
     - inceptionV3로부터 추출된 feature는 fully-conneted layer를 거쳐 classification 진행
     - EEG channel 14개에 대한 14개의 이미지들을 하나의 input으로 동시에 사용하지 않고, channel당 생성되는 하나의 image를 하나의 input으로 사용
     - input data수는 614 x 14(channel 수) = 8596개
+
+<img src = "https://user-images.githubusercontent.com/80897270/146942871-e749ac4e-b2c5-465a-bbb3-89d9b11933b1.png" width ="500" height = "300"/>
 
 ### 2.6. Classifier
 - Fully-connected layer와 CNN으로부터 전달받은 feature를 연결하여 classification 수행
