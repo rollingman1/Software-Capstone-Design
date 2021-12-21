@@ -137,9 +137,9 @@
 ||classification|Train accuracy|Validation accuracy|Test accuracy|
 |-------|-----|-----|------|-----|
 |Parallel 2D CNN|Arousal (HA/LA)|0.9|0.68|0.48|
-|2D CNN|Arousal (HA/LA)|0.82|0.68|<span style="color:yellow">0.64</span>|
+|**2D CNN**|**Arousal (HA/LA)**|**0.82**|**0.68**|**0.64**|
 |Parallel 2D CNN|Valence (HV/LV)|0.9|0.65|0.44|
-|2D CNN|Valence (HV/LV)|0.83|0.7|0.67|
+|**2D CNN**|**Valence (HV/LV)**|**0.83**|**0.7**|**0.67**|
 
 
 
