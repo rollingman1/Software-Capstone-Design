@@ -88,10 +88,18 @@
 - parallel 2D CNN과 일반적인 2D CNN의 Test accuracy와 Validation accuracy 사이의 성능차이를 살펴보면 일반적인 CNN은 parallel 2D CNN에 비해 크지 않음을 확인할 수 있다. 즉, parallel 2D CNN보다 일반적인 2D CNN에서 generalization이 더 잘 이루어졌다고 생각할 수 있다. 이는 parallel 2D CNN에서는 14개의 EEG 2D image를 동시에 하나의 input으로 사용하기 때문에 2D CNN에 비해 데이터 수가 14배 더 적게 되며 이에 대한 영향이 미쳤다고 생각할 수 있다.
 - parallel 2D CNN의 성능이 저조한 또 다른 이유는 14개의 EEG channel 별 차이가 크지 않아, 14개의 EEG channel signal을 하나의 input으로 사용하는 것이 오히려 성능을 방해하는 요소로 작용 했을 수 있다. 실제 근접한 channel에 의해 기록된 EEG signal을 사용하여 2D image로 변환해 본 결과, 유사한 형태를 보임을 확인할 수 있었다.
 
+
+<img src = "https://user-images.githubusercontent.com/80897270/146939747-bfc42b82-c88f-4303-a6e6-c43e306d2fbd.png" width ="300" height = "300"/> <img src = "https://user-images.githubusercontent.com/80897270/146939769-6407e95d-c807-48de-a3ed-08d426c5e7ea.png" width ="300" height = "300"/> <img src = "https://user-images.githubusercontent.com/80897270/146939775-387ae4ca-25f5-4459-a2fb-5c6d5dca0e7f.png" width ="300" height = "300"/>     
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <FC5 channel에 대한 2D image> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <T7 channel에 대한 2D image> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <P7 channel에 대한 2D image>
+
+<p align="center"><img src = "https://user-images.githubusercontent.com/80897270/146939791-21518c45-cc99-4ae6-b9ba-5a7b06773f5f.png" width ="400" height = "400"/></p>
+<p align="center"><머리 위에서 바라본 유사한 이미지를 보이는 channel들의 실제 위치></p>
+
+
 ## 4. 기대효과 및 활용방안
 - 환자의 정신 상태를 정확히 평가하고 정신 건강 상태를 개선하기 위한 유용한 피드백 제공 가능
 - IoT와 센서의 발달로 감정 분류에 기반 한 스마트 헬스 케어 시스템을 통한 삶의 질 개선
-- 감정 탐지에 대한 활발한 데이터 수집을 통해 보다 현실적인 Virtual Reality(VR) 구현 가능하며, 이를        치료와 교육 목적으로 활용할 수 있음
+- 감정 탐지에 대한 활발한 데이터 수집을 통해 보다 현실적인 Virtual Reality(VR) 구현 가능하며, 이를 치료와 교육 목적으로 활용할 수 있음
 
 ## 5. 결론 및 제언
 - Continuous Wavelet Transform(CWT)와 Convolutional Neural Network(CNN)을 사용하여 자동으로 적절한 feature를 추출하고 Fully-connected layer를 통해 감정을 분류해보았다. 14개의 channel에 대한 EEG 이미지를 동시에 학습하는 parallel 2D CNN보다 일반적인 2D CNN을 통한 feature extraction을 수행하였을 때 accuracy성능이 더 높았으며, 보다 일반화된 성능을 보여주었다.    이와 같은 이유는 14개의 channel에 대한 EEG 이미지를 동시에 사용하므로 일반적인 2D CNN보다 parallel 2D CNN에서는 14배 더 적은 data가 training에 사용되기 때문일 수 있으며, channel별 이미지 간에 유의미한 차이가 존재하지 않아, 오히려 성능을 떨어트리는 요소로 작용했다고 생각할 수 있다. 보다 신뢰성을 높이며, accuracy 성능을 향상시키기 위해 아래와 같은 작업을 수행할 예정이다.
