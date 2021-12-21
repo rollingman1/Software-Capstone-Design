@@ -85,20 +85,31 @@
 ### 3.1.과제수행 결과
 - Arousal Classification
     - parallel 2D CNN의 validation accuracy는 0.68, 일반적인 2D CNN의 validation accuracy는 0.68로 성능이 유사하지만, test accuracy는 일반적인 2D CNN에서 0.64로 parallel 2D CNN 보다 더 월등한 성능을 보임
+
+###### <Parallel 2D CNN Arousal train & validation accuracy>
+
 <img src = "https://user-images.githubusercontent.com/80897270/146941729-ceeedd35-646b-49c4-9bf3-b24907a327b1.png" width ="300" height = "300"/>
-<Parallel 2D CNN Arousal train & validation accuracy>
+
+
+###### <2D CNN Arousal train & validation accuracy>
 
 <img src = "https://user-images.githubusercontent.com/80897270/146941737-7c0189a6-db73-4c51-95d8-1f68e97756db.png" width ="300" height = "300"/>
-<2D CNN Arousal train & validation accuracy>
+
+
 
 - Valence Classification
     - parallel 2D CNN의 validation accuracy는 0.65, 일반적인 2D CNN은 0.7로 일반적인 2D CNN이 0.05 더 높았으며, test accuracy에서는 2D CNN에서 0.67을 달성하며 parallel 2D CNN보다 더 좋은 성능을 보임
 
+###### <Parallel 2D CNN Valence train & validation accuracy>
+
 <img src = "https://user-images.githubusercontent.com/80897270/146941988-897a04c6-8b16-4cf5-9be7-eda506568a52.png" width ="300" height = "300"/>
-<Parallel 2D CNN Valence train & validation accuracy>
+
+
+###### <2D CNN Valence train & validation accuracy>
 
 <img src = "https://user-images.githubusercontent.com/80897270/146941992-0d7cefc5-8183-4bd7-a553-9a5922cc3fa0.png" width ="300" height = "300"/>
-<2D CNN Valence train & validation accuracy>
+
+
 
 
 
