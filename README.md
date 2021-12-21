@@ -134,6 +134,12 @@
 <img src = "https://user-images.githubusercontent.com/80897270/146941992-0d7cefc5-8183-4bd7-a553-9a5922cc3fa0.png" width ="300" height = "300"/>
 
 
+||classification|Train accuracy|Validation accuracy|Test accuracy|
+|-------|-----|-----|------|-----|
+|Parallel 2D CNN|Arousal (HA/LA)|0.9|0.68|0.48|
+|2D CNN|Arousal (HA/LA)|0.82|0.68|<span style="color:yellow">0.64</span>|
+|Parallel 2D CNN|Valence (HV/LV)|0.9|0.65|0.44|
+|2D CNN|Valence (HV/LV)|0.83|0.7|0.67|
 
 
 
