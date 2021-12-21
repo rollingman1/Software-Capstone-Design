@@ -12,3 +12,4 @@
 - Convolutional Neural Network(CNN)을 통해 감정 분류에 적절한 feature 자동 추출
  - Parallel 2D CNN을 통한 feature extraction (all-channel)
  - 일반적인 2D CNN을 통한 feature extraction (single-channel)
+ - 
