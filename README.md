@@ -41,9 +41,15 @@
     - 1~9사이 값이 할당된 Valence 값을 5를 기준으로 High Valence / Low Valence로 relabeling
 
 ### 2.3. Continuous Wavelet Transform(CWT) 수행
-
+- Wavelet Transform
+    - cos, sin함수가 아닌 Wavalet 기저함수로 신호분해
+    - scale에 따라 wavelet 함수의 주파수와 국소 시간 조정
 
 - Morlet Wavelt fucntion을 사용한 Coninuous Wavelt Transform을 통해 기존의 1D EEG signal data를 Time-Frequency의 정보를 모두 갖도록 wavelet coefficient 값을 갖는 2차원 형태의 scalogram으로 변환
+    
+<img src = "https://user-images.githubusercontent.com/80897270/146952542-c0b49db9-81a7-4c14-ab58-12b5663e658e.png" width ="400" height = "200"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Morelt wavelet]
+
 
 ### 2.4. Scalogram 이미지화
 - 2차원 형태의 scalogram을 2D 이미지로 변환
