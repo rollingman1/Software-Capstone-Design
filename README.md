@@ -20,6 +20,7 @@
 
 ## 2. 과제 수행방법
 ### 2.1. AMIGOS dataset으로 부터 EEG signal data 수집
+- AMIGOS dataset : http://www.eecs.qmul.ac.uk/mmv/datasets/amigos/readme.html
 - AMIGOS dataset에서 16개의 short video를 시청하며 측정된 EEG signal data 수집
 - 한 사람당 하나의 video를 시청하며 14개의 채널에 대하여 EEG signal 측정됨
 - sampling frequency : 128Hz
