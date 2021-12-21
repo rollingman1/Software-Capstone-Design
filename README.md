@@ -86,7 +86,7 @@
 
 ## 3. 수행결과
 ### 3.1.과제수행 결과
-- Arousal Classification
+- **Arousal Classification**
     - parallel 2D CNN의 validation accuracy는 0.68, 일반적인 2D CNN의 validation accuracy는 0.68로 성능이 유사하지만, test accuracy는 일반적인 2D CNN에서 0.64로 parallel 2D CNN 보다 더 월등한 성능을 보임
 
 ###### <Parallel 2D CNN Arousal train & validation accuracy>
@@ -100,7 +100,7 @@
 
 
 
-- Valence Classification
+- **Valence Classification**
     - parallel 2D CNN의 validation accuracy는 0.65, 일반적인 2D CNN은 0.7로 일반적인 2D CNN이 0.05 더 높았으며, test accuracy에서는 2D CNN에서 0.67을 달성하며 parallel 2D CNN보다 더 좋은 성능을 보임
 
 ###### <Parallel 2D CNN Valence train & validation accuracy>
@@ -134,7 +134,8 @@
 - 감정 탐지에 대한 활발한 데이터 수집을 통해 보다 현실적인 Virtual Reality(VR) 구현 가능하며, 이를 치료와 교육 목적으로 활용할 수 있음
 
 ## 5. 결론 및 제언
-- Continuous Wavelet Transform(CWT)와 Convolutional Neural Network(CNN)을 사용하여 자동으로 적절한 feature를 추출하고 Fully-connected layer를 통해 감정을 분류해보았다. 14개의 channel에 대한 EEG 이미지를 동시에 학습하는 parallel 2D CNN보다 일반적인 2D CNN을 통한 feature extraction을 수행하였을 때 accuracy성능이 더 높았으며, 보다 일반화된 성능을 보여주었다.    이와 같은 이유는 14개의 channel에 대한 EEG 이미지를 동시에 사용하므로 일반적인 2D CNN보다 parallel 2D CNN에서는 14배 더 적은 data가 training에 사용되기 때문일 수 있으며, channel별 이미지 간에 유의미한 차이가 존재하지 않아, 오히려 성능을 떨어트리는 요소로 작용했다고 생각할 수 있다. 보다 신뢰성을 높이며, accuracy 성능을 향상시키기 위해 아래와 같은 작업을 수행할 예정이다.
+- Continuous Wavelet Transform(CWT)와 Convolutional Neural Network(CNN)을 사용하여 자동으로 적절한 feature를 추출하고 Fully-connected layer를 통해 감정을 분류해보았다. 14개의 channel에 대한 EEG 이미지를 동시에 학습하는 parallel 2D CNN보다 일반적인 2D CNN을 통한 feature extraction을 수행하였을 때 accuracy성능이 더 높았으며, 보다 일반화된 성능을 보여주었다.    
+- 이와 같은 이유는 14개의 channel에 대한 EEG 이미지를 동시에 사용하므로 일반적인 2D CNN보다 parallel 2D CNN에서는 14배 더 적은 data가 training에 사용되기 때문일 수 있으며, channel별 이미지 간에 유의미한 차이가 존재하지 않아, 오히려 성능을 떨어트리는 요소로 작용했다고 생각할 수 있다. 보다 신뢰성을 높이며, accuracy 성능을 향상시키기 위해 아래와 같은 작업을 수행할 예정이다.
 - Future works
     - Systematic evalution by varying wavelet functions
     - HAHV/HALV/LAHV/LALV 4-class classification
