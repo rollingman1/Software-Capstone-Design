@@ -12,4 +12,28 @@
 - Convolutional Neural Network(CNN)을 통해 감정 분류에 적절한 feature 자동 추출 
     - Parallel 2D CNN을 통한 feature extraction (all-channel) 
     - 일반적인 2D CNN을 통한 feature extraction (single-channel)
-    - 
+- 감정을 Arousal과 Valence를 기준으로 각각 binary classification 수행
+    - Arousal Binary Classification
+    - Valence Binary Classification
+## 1.3. 최종결과물의 목표
+- CWT와 CNN을 사용한  70% accuracy 이상의 감정 분류 모델 성능
+
+# 2. 과제 수행방법
+## AMIGOS dataset으로 부터 EEG signal data 수집
+- AMIGOS dataset에서 16개의 short video를 시청하며 측정된 EEG signal data 수집
+- 한 사람당 하나의 video를 시청하며 14개의 채널에 대하여 EEG signal 측정됨
+- 4-45Hz bandpass filter가 적용되어 해당 주파수 영역 범위에 대하여 필터링 된 signal
+- self assessment에 참가자가 스스로 느낀 감정을 총 12개의 label로 기록 [arousal, valence, dominance, liking, familiarity, neural, happiness, sadness, surprise, fear, anger, disgust]
+
+## Data cleaning
+- EEG signal data에서 결측 치 제거
+- 다시 4-45Hz의 signal 필터링 수행
+- 흥분의 정도를 나타내는 Arousal과 긍정과 부정의 정도를 나타내는 Valence 두 개의 축으로 대부분의 감정을 설명할 수 있기에 Arousal과 Valence를 제외한 self assessment에 기록된 나머지 감정들 삭제
+
+![image](https://user-images.githubusercontent.com/80897270/146935843-b37eda38-0c62-400f-93fe-91571e29e8b7.png)
+
+- Arousal과 Valence에 대하여 각각 Binary classification 할 수 있도록 label 정리
+    - 1~9사이 값이 할당된 Arousal 값을 5를 기준으로 High Arousal / Low Arousal로 relabeling
+    - 1~9사이 값이 할당된 Valence 값을 5를 기준으로 High Valence / Low Valence로 relabeling
+
+
